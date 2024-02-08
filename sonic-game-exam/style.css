@@ -1,0 +1,47 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(./img/sonic-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.header {
+  color: #eee9e9;
+  font-size: 50px;
+  text-align: center;
+  padding: 30px 0;
+}
+.header__subtitle {
+  padding-bottom: 100px;
+  font-size: 40px;
+  color: #eee9e9;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.input {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+.btn {
+  color: white;
+  font-weight: 500px;
+  padding: 8px 15px;
+  border: 1px solid aqua;
+  background-color: black;
+  border-radius: 7px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  color: black;
+  background-color: white;
+}

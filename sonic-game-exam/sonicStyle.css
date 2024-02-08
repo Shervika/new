@@ -1,0 +1,91 @@
+
+
+
+body {
+  background-image: url(./img/sonicbgpage2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#game-frame {
+  width: 1100px;
+  height: 500px;
+  background-image: url(./img/sonicbgpage2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #333;
+  position: relative;
+  overflow: hidden;
+}
+
+#sonic {
+  width: 50px;
+  height: 50px;
+  background-image: url('./img/sonic.png');
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+.obstacle {
+  width: 20px;
+  height: 40px;
+  background-image: url('./img/idw_eggmanempire_logo_outline_resized.webp');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+.obstacle.animation {
+  animation: moveObstacle 5s linear infinite;
+}
+
+@keyframes moveObstacle {
+  0% {
+    left: 1100px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 150px;
+  }
+
+  30% {
+    bottom: 130px;
+  }
+
+  50% {
+    bottom: 80px;
+  }
+
+  80% {
+    bottom: 130px;
+  }
+
+  100% {
+    bottom: 150px;
+  }
+}
+#score{
+  font-family: sans-serif;
+  color: white;
+  margin-right: 50px;
+  
+}
+.jump {
+  animation: jump 0.3s linear;
+}
